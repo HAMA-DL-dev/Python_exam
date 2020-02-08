@@ -12,3 +12,4 @@ print("C:\\\Windows")
 #string = "hello world"문자열의 길이를 구하여라.
 string="hello world"
 print(len(string))
+
