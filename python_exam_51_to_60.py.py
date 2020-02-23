@@ -101,11 +101,9 @@ string = "삼성전자/LG전자/Naver"
 >> print(interest)
 ['삼성전자', 'LG전자', 'Naver']"""
 string = "삼성전자/LG전자/Naver"
-# 이때
+# 이때 print(string.index("/"))와 'LG전자'문자열 크기를 이용하여 slash의 인덱스 번호를 찾는다.
 interest = [string[0:4], string[5:9], string[10:15]]
-
-
-
+print(interest)
 
 060"""
 회사 이름이 슬래시 ('/')로 구분되어 하나의 문자열로 저장되어 있다.
@@ -116,3 +114,8 @@ string = "삼성전자/LG전자/Naver/SK하이닉스/미래에셋대우"
 실행 예시
 >> print(interest)
 ['삼성전자', 'LG전자', 'Naver', 'SK하이닉스', '미래에셋대우']"""
+interest = [string[0:4], string[5:9], string[10:15], string[16:22], string[23:29]]
+
+#slahs의 인덱스 번호를 하나하나 찾는게 번거롭다. 무얼 어쩌면 좋을까 하다가 split함수 기능을 이용해보았다.
+interest = string.split('/') 
+print(interest)
